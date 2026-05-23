@@ -1,7 +1,7 @@
 import { C } from "../tokens";
 import { SectionDivider } from "../components/Visuals";
 import {
-  Hero, Thesis, Vision, TechSpecs, DevSection, CTA,
+  Hero, HowItWorks, Vision, TechSpecs, DevSection, CTA,
 } from "../components/sections";
 
 export default function Landing() {
@@ -9,14 +9,14 @@ export default function Landing() {
     <>
       <Hero />
       <SectionDivider color={C.purple} />
-      <Thesis />
+      <HowItWorks />
       <SectionDivider color={C.teal} />
       <Vision />
-      <SectionDivider color={C.purple} />
-      <TechSpecs />
       <SectionDivider color={C.teal} />
-      <DevSection />
+      <TechSpecs />
       <SectionDivider color={C.purple} />
+      <DevSection />
+      <SectionDivider color={C.teal} />
       <CTA />
     </>
   );

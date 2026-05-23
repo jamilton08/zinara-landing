@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { C, DOWNLOAD_URL, STUDIO_URL, CONTACT_EMAIL, APP_VERSION, IS_PREVIEW } from "../tokens";
+import { C, DOWNLOAD_URL, STUDIO_URL, CONTACT_EMAIL, APP_VERSION } from "../tokens";
 
 export default function Footer() {
   return (
@@ -26,16 +26,13 @@ export default function Footer() {
               display: "inline-flex", alignItems: "center", gap: "10px",
               marginBottom: "16px", textDecoration: "none",
             }}>
-              <img
-                src="/zinara-icon.png"
-                alt="Zinara"
-                style={{
-                  width: 36, height: 36, borderRadius: "8px",
-                  objectFit: "cover",
-                  display: "block",
-                  boxShadow: `0 0 14px ${C.purple}30`,
-                }}
-              />
+              <div style={{
+                width: 36, height: 36, borderRadius: "8px",
+                background: C.gradPurpleTeal,
+                display: "flex", alignItems: "center", justifyContent: "center",
+                fontSize: "18px", fontWeight: 900, color: "#fff",
+                fontFamily: "'Orbitron', sans-serif",
+              }}>Z</div>
               <span style={{
                 fontFamily: "'Orbitron', sans-serif",
                 fontSize: "20px", fontWeight: 700,
@@ -50,33 +47,15 @@ export default function Footer() {
               fontSize: "12px", color: C.muted,
               lineHeight: 1.7, maxWidth: "280px",
             }}>
-              The platform for motion as a computer input.
-              Games first. Then everything else.
+              Motion as the next standard computer input. Starting with gaming. Built solo, in the Bronx.
             </p>
-            {IS_PREVIEW && (
-              <div style={{
-                display: "inline-block",
-                marginTop: "14px",
-                padding: "4px 10px",
-                borderRadius: "4px",
-                background: `${C.purple}15`,
-                border: `1px solid ${C.purple}40`,
-                fontFamily: "'Space Mono', monospace",
-                fontSize: "10px",
-                color: C.purpleLight,
-                letterSpacing: "2px",
-                textTransform: "uppercase",
-              }}>
-                ◉ Testing release
-              </div>
-            )}
           </div>
 
           <FooterColumn title="PRODUCT" links={[
             { label: "Try Studio",   to: STUDIO_URL,   external: true },
             { label: "Download Mac", to: DOWNLOAD_URL, external: true },
+            { label: "How It Works", to: "/architecture" },
             { label: "Watch Demo",   to: "/demo" },
-            { label: "Home",         to: "/" },
           ]} />
 
           <FooterColumn title="COMPANY" links={[
@@ -124,10 +103,9 @@ function FooterColumn({ title, links }) {
         {links.map(({ label, to, external }) => (
           <li key={label} style={{ marginBottom: "10px" }}>
             {external ? (
-              <a href={to}
+              <a href={to} style={linkStyle}
                  target={to.startsWith("http") ? "_blank" : undefined}
                  rel={to.startsWith("http") ? "noopener noreferrer" : undefined}
-                 style={linkStyle}
                  onMouseOver={e => e.target.style.color = C.tealLight}
                  onMouseOut={e => e.target.style.color = C.muted}>
                 {label}

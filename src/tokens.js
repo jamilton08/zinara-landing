@@ -15,18 +15,18 @@ export const C = {
 };
 
 // ─── CONFIG ───
-// Change these once you have the real URLs.
-export const STUDIO_URL   = "https://app.zinara.gg";
 export const DOWNLOAD_URL = "https://downloads.zinara.gg/Zinara.dmg";
+export const STUDIO_URL = "https://app.zinara.gg";      // web character creator
 export const DEMO_VIDEO_URL = "https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID";
 export const CONTACT_EMAIL = "jonathan.cruz@zinara.gg";
 
 // ─── BUILD INFO ───
 export const APP_VERSION = "1.0.0";
-export const APP_SIZE_MB = 504;        // approx Zinara.app size
-export const MIN_MACOS   = "13 Ventura";
+export const APP_SIZE_MB = 504;
+export const MIN_MACOS = "13 Ventura";
 
-// ─── RELEASE STATE ───
-// Flip to false when you're production-ready. Drives the "testing release"
-// tag on the landing + softer copy throughout the site.
-export const IS_PREVIEW = true;
+// ─── STAGE FLAGS ───
+// Drives the BetaBanner + status copy across the site. Flip to false
+// when you're ready to drop the "in development" framing.
+export const IS_BETA = true;
+export const BETA_MESSAGE = "Zinara is a platform in active development. Built solo, shipping in public.";
