@@ -53,13 +53,16 @@ export default function Nav() {
         display: "flex", alignItems: "center", gap: "10px",
         textDecoration: "none",
       }}>
-        <div style={{
-          width: 36, height: 36, borderRadius: "8px",
-          background: C.gradPurpleTeal,
-          display: "flex", alignItems: "center", justifyContent: "center",
-          fontSize: "18px", fontWeight: 900, color: "#fff",
-          fontFamily: "'Orbitron', sans-serif",
-        }}>Z</div>
+        <img
+          src="/zinara-icon.png"
+          alt="Zinara"
+          style={{
+            width: 36, height: 36, borderRadius: "8px",
+            objectFit: "cover",
+            display: "block",
+            boxShadow: `0 0 14px ${C.purple}30`,
+          }}
+        />
         <span style={{
           fontFamily: "'Orbitron', sans-serif",
           fontSize: "20px", fontWeight: 700,
