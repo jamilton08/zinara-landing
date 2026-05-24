@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Download from "./pages/Download";
 import Architecture from "./pages/Architecture";
 import Studio from "./pages/Studio";
+import Platform from "./pages/Platform";
 
 export default function App() {
   return (
@@ -57,6 +58,7 @@ export default function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/platform" element={<Platform />} />
           <Route path="/architecture" element={<Architecture />} />
           <Route path="/studio" element={<Studio />} />
           <Route path="/demo" element={<Demo />} />

@@ -30,6 +30,7 @@ export default function Nav() {
 
   const links = [
     { label: "Home",         to: "/" },
+    { label: "Platform",     to: "/platform" },
     { label: "How It Works", to: "/architecture" },
     { label: "Studio",       to: "/studio" },
     { label: "Demo",         to: "/demo" },
