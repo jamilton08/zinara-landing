@@ -17,7 +17,7 @@ export const C = {
 // ─── CONFIG ───
 export const DOWNLOAD_URL = "https://downloads.zinara.gg/Zinara.dmg";
 export const STUDIO_URL = "https://app.zinara.gg";      // web character creator
-export const DEMO_VIDEO_URL = "https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID";
+export const DEMO_VIDEO_URL = "https://www.youtube.com/embed/gJNNz70jo9g";
 export const CONTACT_EMAIL = "jonathan.cruz@zinara.gg";
 
 // ─── BUILD INFO ───
