@@ -46,7 +46,7 @@ export function Hero() {
           letterSpacing: "6px", textTransform: "uppercase",
           marginBottom: "24px",
         }}>
-          ▸ MOTION AS INPUT · BETA ◂
+          ▸ GAME ENGINE · MOTION GAMING · BETA ◂
         </div>
 
         <h1 style={{
@@ -71,9 +71,11 @@ export function Hero() {
           maxWidth: "620px", margin: "24px auto 32px",
           lineHeight: 1.7, letterSpacing: "0.5px",
         }}>
-          Motion as the next standard computer input — starting with gaming.
+          The game engine for motion-controlled games.
           <br />
-          Upload a photo. Become a 3D character. Control it with your body.
+          Built on Godot. Powered by a custom motion foundation model.
+          <br />
+          Starting with gaming — building toward motion as input for everything.
         </p>
 
         {/* PRIMARY: TWO CTAs side-by-side */}
@@ -887,7 +889,7 @@ export function CTA() {
             fontSize: "11px", color: C.muted,
             letterSpacing: "1px",
           }}>
-            BUILT SOLO · BRONX, NY · 2026 · PLATFORM IN DEVELOPMENT
+            BUILT SOLO · BRONX, NY · 2026 · GAME ENGINE → PLATFORM
           </div>
         </div>
       </ScrollReveal>

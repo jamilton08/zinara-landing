@@ -51,25 +51,28 @@ export default function About() {
             }}>
               <p style={{ marginBottom: "20px" }}>
                 Hi, I'm <span style={{ color: C.tealLight, fontWeight: 700 }}>Jonathan Cruz</span>.
-                I teach computer science at a public high school in the Bronx. I built
-                Zinara on nights and weekends, between grading exams and helping my
-                students write their first lines of code.
+                I'm a data scientist with an MS in Data Science, previously a software
+                developer in industry. Today I teach computer science at a public high
+                school in the Bronx — and on nights and weekends, between grading exams
+                and helping my students write their first lines of code, I built Zinara.
               </p>
 
               <p style={{ marginBottom: "20px" }}>
                 It started with one question: what if your body was the controller?
-                Not VR. Not a Kinect. Just a webcam, a model trained on motion data, and
-                a 3D character that moves the way you do.
+                Not VR. Not a Kinect. Just a webcam, a motion foundation model, and a
+                3D character that moves the way you do.
               </p>
 
               <p style={{ marginBottom: "20px" }}>
-                I trained the motion foundation model from scratch —{" "}
+                I trained the motion foundation model from scratch on 220k synthetic
+                samples —{" "}
                 <span style={{ color: C.purpleLight }}>4.27° average rotational error</span>,{" "}
                 generalizes from synthetic training data to real humans without
-                fine-tuning. I built the character generation pipeline — photo to
-                fully-rigged 3D character in three minutes, for about thirty cents in
-                compute. I built the native app, the backend on Hetzner, the website
-                you're reading right now.
+                fine-tuning. I forked Godot to integrate the model natively into the
+                engine. I built the character generation pipeline — photo to fully-rigged
+                3D character in three minutes, for about thirty cents in compute. I built
+                the native Mac app, the backend on Hetzner, the website you're reading
+                right now.
               </p>
 
               <p style={{ marginBottom: "20px", fontStyle: "italic", color: C.tealLight }}>
@@ -77,16 +80,19 @@ export default function About() {
               </p>
 
               <p style={{ marginBottom: "20px" }}>
-                Zinara isn't just a product — it's a proof. One person, the right tools,
-                a clear vision: <span style={{ color: C.tealLight }}>motion is the next
-                standard computer input.</span> Your body is the API. Your movement is
-                the interface.
+                Zinara is a{" "}
+                <span style={{ color: C.tealLight }}>game engine for motion-controlled games</span>,{" "}
+                built on Godot with a motion foundation model wired in at the engine
+                level. Developers will build games where the player's body is the
+                controller. Long-term, the same foundation extends beyond gaming —
+                motion is the fourth primary input for computers, after keyboard, touch,
+                and voice. Gaming is the wedge.
               </p>
 
               <p style={{ color: C.muted, fontSize: "14px" }}>
-                If that resonates, download the Mac app and play. If you're an investor,
-                a builder, or someone who wants to collaborate — reach out directly.
-                I read every email.
+                If that resonates: download the Mac app and play. If you're a developer
+                who wants to build on the engine, an investor, or someone who wants to
+                collaborate — reach out directly. I read every email.
               </p>
             </div>
 
@@ -130,7 +136,7 @@ export default function About() {
           }}>
             {[
               { label: "Built",          value: "Solo" },
-              { label: "Day Job",        value: "HS Teacher" },
+              { label: "Background",     value: "MS Data Sci" },
               { label: "Model Error",    value: "4.27°" },
               { label: "Stack",          value: "Full" },
             ].map(({ label, value }) => (
